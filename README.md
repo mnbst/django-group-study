@@ -5,7 +5,7 @@ docker composeでローカルサーバーの立ち上げ
 
 Djangoのデフォルト画面の表示
 
-### 設計
+### 手順
 
 - appディレクトリの作成
 
@@ -27,3 +27,11 @@ Djangoのデフォルト画面の表示
 - ブラウザ表示
 
 `docker compose up`
+
+## step2: Vuejsの環境構築
+### 要件
+docker composeでローカルサーバーの立ち上げ
+
+Vueのデフォルト画面の表示
+
+### 手順
