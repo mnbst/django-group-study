@@ -21,4 +21,5 @@ Djangoのデフォルト画面の表示
 ```
 
 - Djangoプロジェクト作成
+
 `docker compose run python django-admin startproject app .`
