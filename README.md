@@ -125,7 +125,7 @@ localhost:8000にアクセスした時にVueのデフォルトページが表示
 
 ### 手順
 
-- vue.config.jsを作成する
+- vue.config.jsを作成し編集する。
 
 ```
 cd vue
