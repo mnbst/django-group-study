@@ -5,6 +5,7 @@ docker composeでローカルサーバーの立ち上げ
 Djangoのデフォルト画面の表示
 
 - appディレクトリの作成
+
 .
 ├── django
 ├── docker
