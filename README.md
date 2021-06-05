@@ -1,1 +1,4 @@
-# django-group-study
+# 勉強会
+## step1: Djangoの環境構築
+
+- 
