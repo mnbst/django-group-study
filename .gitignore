@@ -129,3 +129,7 @@ dmypy.json
 .pyre/
 
 .vscode/
+vue/node_modules
+python/.bash_history
+python/.vscode-server
+.devcontainer
