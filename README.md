@@ -141,6 +141,9 @@ Djangoで必要なライブラリを追加する→Vue側でwebpackの設定フ�
 - django-webpack-loaderの導入  
 - `Are you sure webpack has generated the file and the path is correct?`と表示されることを確認
 
+*参考資料<br>
+https://githubja.com/owais/django-webpack-loader
+
 ## Step4：　Vue側にwebpack導入
 ### ゴール
 
