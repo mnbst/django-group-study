@@ -2,6 +2,7 @@ version: "3.9"
 services: 
     python:
         build:
+            context: ./
             dockerfile: docker/python/Dockerfile
         command: python manage.py runserver 0.0.0.0:8000
         ports: 
@@ -11,6 +12,7 @@ services:
             - webpack-stats:/usr/src/app/webpack
     vue:
         build: 
+            context: ./
             dockerfile: docker/vue/Dockerfile
         command: npm run serve
         volumes:

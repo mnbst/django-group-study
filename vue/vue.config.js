@@ -2,7 +2,7 @@ const BundleTracker = require("webpack-bundle-tracker");
 
 module.exports = {
     pages: {
-        application: {
+        main_page: {
             entry: './src/main.js',
             chunks: ['chunk-vendors']
         },
