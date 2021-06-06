@@ -136,7 +136,7 @@ WEBPACK_DIR = os.path.join(Path(BASE_DIR), "webpack")
 WEBPACK_LOADER = {
     "DEFAULT": {
         "CACHE": not DEBUG,
-        "BUNDLE_DIR_NAME": "vue/",  # must end with slash
+        "BUNDLE_DIR_NAME": "/",  # must end with slash
         "STATS_FILE": os.path.join(WEBPACK_DIR, "webpack-stats.json"),
         "POLL_INTERVAL": 0.1,
         "TIMEOUT": None,

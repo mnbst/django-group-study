@@ -11,7 +11,7 @@ module.exports = {
     productionSourceMap: false,
     publicPath: process.env.NODE_ENV === 'production' ?
         '' : 'http://localhost:8080/',
-    outputDir: './public/vue',
+    outputDir: './public',
 
     chainWebpack: config => {
 
