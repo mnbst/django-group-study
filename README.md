@@ -1,4 +1,16 @@
 # 勉強会
+## 準備
+
+1. vscodeを使う
+2. 必要なプラグイン → Django/Django Template/Python/Pylance/Beautify/Vetur
+5. インタープリタでPython3最新を選び、フォーマッタにblackを選択する。
+3. settings.jsonに以下を加筆する。
+
+```
+    "python.formatting.provider": "black",
+    "python.languageServer": "Pylance",
+```
+
 ## step1: Djangoの環境構築
 ### ゴール
 docker composeでローカルサーバーの立ち上げ
@@ -7,7 +19,7 @@ Djangoのデフォルト画面の表示
 
 ### 手順
 
-- appディレクトリの作成
+- ディレクトリの作成
 
 ```
 .
@@ -22,7 +34,14 @@ Djangoのデフォルト画面の表示
 
 - Djangoプロジェクト作成
 
-`docker compose run django django-admin startproject app .`
+```
+cd python
+docker compose run django django-admin startproject app .
+```
+
+- Dockerの設定  
+    - Dockerfile記述
+    - docker-compose.yml記述
 
 - ブラウザ表示
 
@@ -54,7 +73,9 @@ brew install node
   npx @vue/cli create vue
 ```
 
-- Dockerの設定
+- Dockerの設定  
+    - Dockerfile記述
+    - docker-compose.yml加筆 
 
 ```
 .
@@ -102,6 +123,8 @@ docker compose up
 - ブラウザ確認
 
 `localhost:8080`
+
+`docker compose down`
 
 ## Step3：　Djnago側にwebpack導入
 ### ゴール
