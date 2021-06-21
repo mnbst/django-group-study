@@ -131,13 +131,11 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, "public"),)
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-WEBPACK_DIR = os.path.join(Path(BASE_DIR), "webpack")
-
 WEBPACK_LOADER = {
     "DEFAULT": {
         "CACHE": not DEBUG,
         "BUNDLE_DIR_NAME": "webpack_bundles/",  # must end with slash
-        "STATS_FILE": os.path.join(WEBPACK_DIR, "webpack-stats.json"),
+        "STATS_FILE": os.path.join(BASE_DIR, "webpack/webpack-stats.json"),
         "POLL_INTERVAL": 0.1,
         "TIMEOUT": None,
         "IGNORE": [r".+\.hot-update.js", r".+\.map"],
