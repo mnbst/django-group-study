@@ -47,6 +47,8 @@ directory/to/python/version/bin/black
 ```
 下記画像を参考にpreferences -> tools -> file watcher -> +ボタンを押して追加。
 
+<img width="691" alt="スクリーンショット 2021-06-21 15 07 53" src="https://user-images.githubusercontent.com/47024101/122714933-1c3a0a00-d2a3-11eb-9f08-8470f4f91e3e.png">
+
 ## step1: Djangoの環境構築
 
 ### ゴール
