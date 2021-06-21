@@ -4,7 +4,7 @@
 
 ### ①npmの導入
 
-```bash
+```shell
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 $ brew update
 $ brew install node
@@ -28,7 +28,7 @@ $ (brew upgrade node)
 
 #### black(フォーマッター)の導入
 
-```bash
+```shell
 $ pip install --user black
 $ black # 起動確認
 No Path provided. Nothing to do 😴
@@ -37,11 +37,11 @@ No Path provided. Nothing to do 😴
 `WARNING: The scripts black, black-primer and blackd are installed in '/directory/to/python/version/bin' which is not on PATH.`
 のようなアラート文が出てしまった場合は、環境変数のPATH(.bash_profileなど)に上記のディレクトリを追加する。
 
-```bash
+```shell
 export PATH=$PATH:/hoge/hoge/:/directory/to/python/version/bin
 ```
 
-```bash
+```shell
 $ which black
 directory/to/python/version/bin/black
 ```
@@ -65,7 +65,7 @@ Djangoのデフォルト画面の表示
 
 - ディレクトリの作成
 
-```bash
+```shell
 .
 ├── docker
 │   ├── python
@@ -82,7 +82,7 @@ Djangoのデフォルト画面の表示
   
 - Djangoプロジェクト作成
 
-```bash
+```shell
 cd python
 docker compose run django django-admin startproject app .
 ```
@@ -105,7 +105,7 @@ Vueのデフォルト画面の表示
 
 - Vuejsの導入
 
-```bash
+```shell
 $ cd vue
 $ npm install -D @vue/cli
 $ npx @vue/cli create vue
@@ -115,7 +115,7 @@ $ npx @vue/cli create vue
   - Dockerfile記述
   - docker-compose.yml加筆
 
-```bash
+```shell
 .
 ├── docker
 │   ├── python
@@ -153,7 +153,7 @@ $ npx @vue/cli create vue
 
 - コンテナ立ち上げ
 
-```bash
+```shell
 docker compose down
 docker compose build
 docker compose up
@@ -167,7 +167,7 @@ docker compose up
 
 #### prettier(フォーマッター)の導入
 
-```bash
+```shell
 $ npm i -D prettier
 ```
 - pluginからprettierを検索してインストールする
