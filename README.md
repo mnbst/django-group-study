@@ -26,7 +26,7 @@ $ (brew upgrade node)
 
 ### PyCharmを使用する場合の設定
 
-#### フォーマッターの導入
+#### black(フォーマッター)の導入
 
 ```bash
 $ pip install --user black
@@ -61,7 +61,7 @@ Djangoのデフォルト画面の表示
 
 - ディレクトリの作成
 
-```
+```bash
 .
 ├── docker
 │   ├── python
@@ -74,7 +74,7 @@ Djangoのデフォルト画面の表示
 
 - Djangoプロジェクト作成
 
-```
+```bash
 cd python
 docker compose run django django-admin startproject app .
 ```
@@ -101,9 +101,9 @@ Vueのデフォルト画面の表示
 
 - Vuejsの導入
 
-```
+```bash
   cd vue
-  npm install @vue/cli
+  npm install -D @vue/cli
   npx @vue/cli create vue
 ```
 
@@ -111,7 +111,7 @@ Vueのデフォルト画面の表示
   - Dockerfile記述
   - docker-compose.yml加筆
 
-```
+```bash
 .
 ├── docker
 │   ├── python
@@ -149,7 +149,7 @@ Vueのデフォルト画面の表示
 
 - コンテナ立ち上げ
 
-```
+```bash
 docker compose down
 docker compose build
 docker compose up
@@ -160,6 +160,14 @@ docker compose up
 `localhost:8080`
 
 `docker compose down`
+
+#### prettier(フォーマッター)の導入
+
+```bash
+$ npm i -D prettier
+```
+- pluginからprettierを検索してインストールする
+- 言語＆フレームワーク -> javascript -> prettierで以下のように設定する。
 
 ## Step3：　Djnago側にwebpack導入
 
