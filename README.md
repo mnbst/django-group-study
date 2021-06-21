@@ -5,10 +5,10 @@
 ### ①npmの導入
 
 ```shell
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-$ brew update
-$ brew install node
-$ (brew upgrade node)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew update
+brew install node
+(brew upgrade node)
 ```
 
 ### ②vscodeを使用する場合の設定
@@ -29,8 +29,8 @@ $ (brew upgrade node)
 #### black(フォーマッター)の導入
 
 ```shell
-$ pip install --user black
-$ black # 起動確認
+pip install --user black
+black # 起動確認
 No Path provided. Nothing to do 😴
 ```
 もしpip install中に
@@ -42,7 +42,7 @@ export PATH=$PATH:/hoge/hoge/:/directory/to/python/version/bin
 ```
 
 ```shell
-$ which black
+which black
 directory/to/python/version/bin/black
 ```
 下記画像を参考にpreferences -> tools -> file watcher -> +ボタンを押して追加。
@@ -106,9 +106,9 @@ Vueのデフォルト画面の表示
 - Vuejsの導入
 
 ```shell
-$ cd vue
-$ npm install -D @vue/cli
-$ npx @vue/cli create vue
+cd vue
+npm install -D @vue/cli
+npx @vue/cli create vue
 ```
 
 - Dockerの設定
@@ -168,7 +168,7 @@ docker compose up
 #### prettier(フォーマッター)の導入
 
 ```shell
-$ npm i -D prettier
+npm i -D prettier
 ```
 - pluginからprettierを検索してインストールする
 - 言語＆フレームワーク -> javascript -> prettierで以下のように設定する。
@@ -205,9 +205,9 @@ localhost:8000にアクセスした時にVueのデフォルトページが表示
 - vue.config.jsを作成し編集する。
 
 ```shell
-$ cd vue
-$ npm i -D webpack-bundle-tracker
-$ touch vue.config.js
+cd vue
+npm i -D webpack-bundle-tracker
+touch vue.config.js
 ```
 
 *参考資料<br>
