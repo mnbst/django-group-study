@@ -49,6 +49,10 @@ directory/to/python/version/bin/black
 
 <img width="691" alt="スクリーンショット 2021-06-21 15 07 53" src="https://user-images.githubusercontent.com/47024101/122714933-1c3a0a00-d2a3-11eb-9f08-8470f4f91e3e.png">
 
+### ④プロジェクトフォルダ作成
+
+適当な場所で`mkdir project`
+
 ## step1: Djangoの環境構築
 
 ### ゴール
@@ -72,16 +76,16 @@ Djangoのデフォルト画面の表示
 └── vue
 ```
 
+- Dockerの設定
+  - Dockerfile記述
+  - docker-compose.yml記述
+  
 - Djangoプロジェクト作成
 
 ```bash
 cd python
 docker compose run django django-admin startproject app .
 ```
-
-- Dockerの設定
-  - Dockerfile記述
-  - docker-compose.yml記述
 
 - ブラウザ表示
 
@@ -102,9 +106,9 @@ Vueのデフォルト画面の表示
 - Vuejsの導入
 
 ```bash
-  cd vue
-  npm install -D @vue/cli
-  npx @vue/cli create vue
+$ cd vue
+$ npm install -D @vue/cli
+$ npx @vue/cli create vue
 ```
 
 - Dockerの設定
@@ -183,7 +187,7 @@ Djangoで必要なライブラリを追加する→Vue側でwebpackの設定フ�
 
 - `python/templates/index.html`を作成する
 - settingsファイルでテンプレートディレクトリを定義する。
-- ルートpathで上記のテンプレートを指定する
+- urls.pyで上記のテンプレートを指定する
 - django-webpack-loaderの導入
 - `Are you sure webpack has generated the file and the path is correct?`と表示されることを確認
 
@@ -200,10 +204,10 @@ localhost:8000にアクセスした時にVueのデフォルトページが表示
 
 - vue.config.jsを作成し編集する。
 
-```
-cd vue
-npm i --save-dev webpack-bundle-tracker
-touch vue.config.js
+```shell
+$ cd vue
+$ npm i -D webpack-bundle-tracker
+$ touch vue.config.js
 ```
 
 *参考資料<br>
