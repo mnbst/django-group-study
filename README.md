@@ -169,6 +169,8 @@ $ npm i -D prettier
 - pluginからprettierを検索してインストールする
 - 言語＆フレームワーク -> javascript -> prettierで以下のように設定する。
 
+<img width="980" alt="スクリーンショット 2021-06-21 15 17 34" src="https://user-images.githubusercontent.com/47024101/122716226-f4e43c80-d2a4-11eb-8ea2-d0a396acfbf5.png">
+
 ## Step3：　Djnago側にwebpack導入
 
 ### ゴール
