@@ -2,7 +2,7 @@
 
 ## 準備
 
-### npmの導入
+### ①npmの導入
 
 ```bash
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -11,7 +11,7 @@ $ brew install node
 $ (brew upgrade node)
 ```
 
-### vscodeを使用する場合の設定
+### ②vscodeを使用する場合の設定
 
 2. 必要なプラグイン → Django/Django Template/Python/Pylance/Beautify/Vetur
 5. インタープリタでPython3最新を選び、フォーマッタにblackを選択する。
@@ -24,7 +24,7 @@ $ (brew upgrade node)
 }
 ```
 
-### PyCharmを使用する場合の設定
+### ③PyCharmを使用する場合の設定
 
 #### black(フォーマッター)の導入
 
@@ -35,7 +35,7 @@ No Path provided. Nothing to do 😴
 ```
 もしpip install中に
 `WARNING: The scripts black, black-primer and blackd are installed in '/directory/to/python/version/bin' which is not on PATH.`
-のようなアラート文が出てしまった場合は、下記のように環境変数のPATH(.bash_profileなど)に上記のディレクトリを追加する。
+のようなアラート文が出てしまった場合は、環境変数のPATH(.bash_profileなど)に上記のディレクトリを追加する。
 
 ```bash
 export PATH=$PATH:/hoge/hoge/:/directory/to/python/version/bin
