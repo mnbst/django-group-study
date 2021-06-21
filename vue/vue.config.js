@@ -20,7 +20,7 @@ module.exports = {
     ]);
 
     config.devServer
-      .host("localhost")
+      .host("0.0.0.0")
       .port(8080)
       .hotOnly(true)
       .watchOptions({

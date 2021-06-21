@@ -6,5 +6,5 @@ ENV HOME=/usr/src/app/
 
 WORKDIR $HOME
 
-COPY requirements.txt $HOME
+COPY python/requirements.txt $HOME
 RUN pip install -r requirements.txt
