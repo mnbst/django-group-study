@@ -1,28 +1,28 @@
 version: "3.9"
-services: 
-    python:
-        build:
-            context: ./
-            dockerfile: docker/python/Dockerfile
-        command: python manage.py runserver 0.0.0.0:8000
-        ports: 
-            - 8000:8000
-        volumes:
-            - ./python:/usr/src/app
-            - webpack-stats:/usr/src/app/webpack
-    vue:
-        build: 
-            context: ./
-            dockerfile: docker/vue/Dockerfile
-        command: npm run serve
-        volumes:
-            - ./vue/src:/usr/src/app/src
-            - ./vue/vue.config.js:/usr/src/app/vue.config.js
-            - webpack-stats:/usr/src/app/webpack
-        ports:
-            - 8080:8080
-        tty: true
-        environment:
-        - CHOKIDAR_USEPOLLING=true
+services:
+  python:
+    build:
+      context: ./
+      dockerfile: docker/python/Dockerfile
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - 8000:8000
+    volumes:
+      - ./python:/usr/src/app
+      - webpack-stats:/usr/src/app/webpack
+  vue:
+    build:
+      context: ./
+      dockerfile: docker/vue/Dockerfile
+    command: npm run serve
+    volumes:
+      - ./vue/src:/usr/src/app/src
+      - ./vue/vue.config.js:/usr/src/app/vue.config.js
+      - webpack-stats:/usr/src/app/webpack
+    ports:
+      - 8080:8080
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
 volumes:
-    webpack-stats:
+  webpack-stats:
