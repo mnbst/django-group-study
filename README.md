@@ -5,10 +5,8 @@
 ### ①npmの導入
 
 ```shell
-(/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)")
 brew update
 brew install node
-(brew upgrade node)
 # 以下を確認
 node -v                                                                                                                                  
 v12.14.1
