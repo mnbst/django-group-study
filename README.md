@@ -37,20 +37,12 @@ npm -v
 pip install --user black
 black # 起動確認
 No Path provided. Nothing to do 😴
-```
-もしpip install中に
-`WARNING: The scripts black, black-primer and blackd are installed in '/directory/to/python/version/bin' which is not on PATH.`
-のようなアラート文が出てしまった場合は、環境変数のPATH(.bash_profileなど)に上記のディレクトリを追加する。
-
-```shell
-export PATH=$PATH:/hoge/hoge/:/directory/to/python/version/bin
-```
-
-```shell
+# 以下必須ではないが、blackのインストール先は控えておく
 which black
 directory/to/python/version/bin/black
 ```
-下記画像を参考にpreferences -> tools -> file watcher -> +ボタンを押して追加。
+
+下記画像を参考にpreferences -> tools -> file watcher -> +ボタンを押して追加。控えておいた絶対パスを入力する。
 
 <img width="691" alt="スクリーンショット 2021-06-21 15 07 53" src="https://user-images.githubusercontent.com/47024101/122714933-1c3a0a00-d2a3-11eb-9f08-8470f4f91e3e.png">
 
