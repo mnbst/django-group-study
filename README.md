@@ -42,7 +42,7 @@ black # 起動確認
 No Path provided. Nothing to do 😴
 ```
 
-- `WARNING: The scripts black, black-primer and blackd are installed in '/hoge/fuga/bin' which is not on PATH.`のようなアラートが表示された場合
+- pip install中に`WARNING: The scripts black, black-primer and blackd are installed in '/hoge/fuga/bin' which is not on PATH.`のようなアラートが表示された場合
     - /hoge/fuga/bin/blackを絶対パスとして控えておく。
 
 下記画像を参考にpreferences -> tools -> file watcher -> +ボタンを押して追加。控えておいた絶対パスを赤字の箇所に入力する。
