@@ -42,7 +42,7 @@ which black
 directory/to/python/version/bin/black
 ```
 
-下記画像を参考にpreferences -> tools -> file watcher -> +ボタンを押して追加。控えておいた絶対パスを入力する。
+下記画像を参考にpreferences -> tools -> file watcher -> +ボタンを押して追加。控えておいた絶対パスを赤字の箇所に入力する。
 
 <img width="691" alt="スクリーンショット 2021-06-21 15 07 53" src="https://user-images.githubusercontent.com/47024101/122714933-1c3a0a00-d2a3-11eb-9f08-8470f4f91e3e.png">
 
