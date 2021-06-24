@@ -42,6 +42,9 @@ black # 起動確認
 No Path provided. Nothing to do 😴
 ```
 
+- `WARNING: The scripts black, black-primer and blackd are installed in '/hoge/fuga/bin' which is not on PATH.`のようなアラートが表示された場合
+    - /hoge/fuga/bin/blackを絶対パスとして控えておく。
+
 下記画像を参考にpreferences -> tools -> file watcher -> +ボタンを押して追加。控えておいた絶対パスを赤字の箇所に入力する。
 
 <img width="691" alt="スクリーンショット 2021-06-21 15 07 53" src="https://user-images.githubusercontent.com/47024101/122714933-1c3a0a00-d2a3-11eb-9f08-8470f4f91e3e.png">
