@@ -70,7 +70,6 @@ Djangoのデフォルト画面の表示
 │   └── vue
 ├── docker-compose.yml
 ├── python
-├── requirements.txt
 └── vue
 ```
 
