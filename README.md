@@ -35,11 +35,11 @@ npm -v
 
 ```shell
 pip install --user black
-black # 起動確認
-No Path provided. Nothing to do 😴
 # 以下必須ではないが、blackのインストール先は控えておく
 which black
 directory/to/python/version/bin/black
+black # 起動確認
+No Path provided. Nothing to do 😴
 ```
 
 下記画像を参考にpreferences -> tools -> file watcher -> +ボタンを押して追加。控えておいた絶対パスを赤字の箇所に入力する。
