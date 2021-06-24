@@ -35,7 +35,7 @@ npm -v
 
 ```shell
 pip install --user black
-# 以下必須ではないが、blackのインストール先は控えておく
+# 以下必須ではないが、blackのインストール先のパスは控えておく
 which black
 directory/to/python/version/bin/black
 black # 起動確認
